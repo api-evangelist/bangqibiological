@@ -1,23 +1,51 @@
 aid: bangqibiological
+
 name: Bangqibiological
-description: 'Bangqibiological is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bangqibiological is a stub company identified during the API Evangelist secondary-market harvest. It currently lacks publicly available API documentation, website, or detailed corporate information. The entry serves as a placeholder for future enrichment as more data becomes available, enabling the pipeline to track its development and potential API offerings.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bangqibiological/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Research
+- Health
+- Life-Sciences
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bangqibiological-hosts.yml
+- type: Vendors
+  url: vendors/bangqibiological-vendors.yml
+- type: DomainSecurity
+  url: security/bangqibiological-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/bangqibiological
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
